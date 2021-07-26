@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="prenom">Votre prénom </label>
+            <input type="text" name="prenom" id="prenom">
+        </p>
+
+        <p>
+            <label for="mdp">Mot de passe </label>
+            <input type="password" name="mdp" id="mdp">
+        </p>
+
+        <p>
+            <label for="com">Commentaire </label>
+            <textarea name="com" id="com" rows="5" cols="50">
+                Postez un Commentaire ici :
+            </textarea>
+        </p>
+
+        <p>
+            <label for="mail">Mail </label>
+            <input type="email" name="mail" id="mail" />
+        </p>
+
+        <p>
+            <label for="numero">number </label>
+            <input type="number" name="numero" id="numero" />
+        </p>
+
+        <p>
+            <input type="checkbox" name="france" id="france">
+            <label for="france">france</label>
+        </p>
+
+        <p>
+            <input type="checkbox" name="france" id="france" checked>
+            <label for="france">france</label>
+        </p>
+        <p>
+            fr<input type="radio" name="pays" id="pays1" value="france">
+            sw<input type="radio" name="pays" id="pays2" value="suisse">
+            uk<input type="radio" name="pays" id="pays3" value="uk">
+        </p>
+
+        <p>
+            <select name="pays" id="pays">
+                 <option value="france" selected>France</option>
+                 <option value="suisse" selected>Suisse</option>
+                 <option value="uk" selected>uk</option>
+            </select>
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>Formulaire</legend>
+                <form method="post" action="fichier.truc">
+                    <p>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" name="prenom" required>
+                    </p>
+            </fieldset>
+        </p>
+
+        <input type="submit" value="Enoyer">
+    </form>
+</body>
+
+</html>
